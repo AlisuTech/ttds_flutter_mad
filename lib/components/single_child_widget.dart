@@ -54,7 +54,7 @@ class SingleChildWidget extends StatelessWidget {
     );
   }
 
-  double calculate(){
+  double calculate() {
     return 0;
   }
 }

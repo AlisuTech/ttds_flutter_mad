@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'components/multiple_children.dart';
 import 'components/single_child_widget.dart';
 
 void main() {
@@ -95,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
           child: GestureDetector(
             onTap: activateTap,
             child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20), color: Colors.blue),
               child: const Text(
@@ -128,7 +129,7 @@ class _MyHomePageState extends State<MyHomePage> {
         centerTitle: true,
         elevation: 0,
       ),
-      body: const SingleChildWidget(),
+      body: const MultipleChildren(),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         // backgroundColor: Colors.amber,
